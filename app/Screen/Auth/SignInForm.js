@@ -29,18 +29,8 @@ const Example = () => {
             <Input  placeholder="Title"    borderWidth="1" borderColor="#4b778d"  InputRightElement={<Icon as={<MaterialIcons name="phone" />} size={5} ml="2" color="muted.400" />}/>
         
           </FormControl>
-          <FormControl isInvalid  mb="5">
-            {/* <FormControl.Label>Project Title</FormControl.Label> */}
-            <Input  placeholder="Title" InputRightElement={<Icon as={<MaterialIcons name="password" />} size={5} ml="2" color="muted.400" />}/>
         
-          </FormControl>
-          <FormControl isInvalid>
-            {/* <FormControl.Label>Project Title</FormControl.Label> */}
-            <Input placeholder="Title"  InputRightElement={<Icon as={<MaterialIcons name="password" />} size={5} ml="2" color="muted.400" />} />
-            <FormControl.ErrorMessage leftIcon={<WarningOutlineIcon size="xs" />}>
-              Something is wrong.
-            </FormControl.ErrorMessage>
-          </FormControl>
+         
         </Box>
       </Stack>
     // </KeyboardAwareScrollView>

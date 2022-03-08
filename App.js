@@ -987,22 +987,75 @@
 
 
 
-import React from "react";
-import { View, StyleSheet, Text, FlatList } from "react-native";
+import React,{Component} from "react";
+import { View, StyleSheet, Text, FlatList,Dimensions ,TouchableOpacity,StatusBar} from "react-native";
 import OptUi from "./OptUi"
 // const ANIMALS = ["Dog", "Cat", "Chicken", "Dragon", "Camel"];
 import Header from "./Header";
 import Tab from "./Tab"
-import Home from "./Home";
+// import Home from "./Home";
 import Add_new_acctiverity  from "./Add_New_request"
+// import Home from "./app/Screen/Home/Home"
+import MainNav from "./app/navigation/index"
+ import OnBoarding from "./OnBoarding";
+// import React, { Component } from 'react'
+// import { AppRegistry, StyleSheet, Text, View } from 'react-native'
+ import OTP from "./OTPUi"
+import Swiper from 'react-native-swiper'
+ import Ronboading from "./app/Screen/Onboading/OnBoarding"
+// const styles = StyleSheet.create({
+//   wrapper: {},
+//   slide1: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     backgroundColor: '#9DD6EB'
+//   },
+//   slide2: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     backgroundColor: '#97CAE5'
+//   },
+//   slide3: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     backgroundColor: '#92BBD9'
+//   },
+//   text: {
+//     color: '#fff',
+//     fontSize: 30,
+//     fontWeight: 'bold'
+//   }
+// })
+ 
+ class SwiperComponent extends Component {
+  render() {
+    return (
+      <Swiper style={styles.wrapper} showsButtons={true}>
+        <View style={styles.slide1}>
+          <Text style={styles.text}>Hello Swiper</Text>
+        </View>
+        <View style={styles.slide2}>
+          <Text style={styles.text}>Beautiful</Text>
+        </View>
+        <View style={styles.slide3}>
+          <Text style={styles.text}>And simple</Text>
+        </View>
+      </Swiper>
+    )
+  }
+}
 export default function App() {
   return (
     <View style={styles.container}>
    
-
-
-   <Add_new_acctiverity/>
-
+<MainNav/>
+{/* <Tab/> */}
+   {/* <OnBoarding/> */}
+{/* <OTP/> */}
+{/* <Ronboading/> */}
     </View>
   );
 }
@@ -1010,6 +1063,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     // width: "100%",
+    flex:1,
+    backgroundColor:"#ffff",
+    // flexBasis:500
     // padding: 16,
     // paddingTop: 100,
   },
@@ -1020,4 +1076,28 @@ const styles = StyleSheet.create({
     width:'100%',
     padding: 25,
   },
+  wrapper: {},
+  slide1: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#9DD6EB'
+  },
+  slide2: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#97CAE5'
+  },
+  slide3: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#92BBD9'
+  },
+  text: {
+    color: '#fff',
+    fontSize: 30,
+    fontWeight: 'bold'
+  }
 });

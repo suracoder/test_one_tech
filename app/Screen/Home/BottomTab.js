@@ -6,8 +6,8 @@ import { Ionicons } from '@expo/vector-icons';
 export default function MyTabBar({ state, descriptors, navigation }) {
     console.log(state)
   return (
-    <View style={{ flexDirection: 'row'}}>
-      {state.routes.map((route, index) => {
+    <View style={{ flexDirection: 'row',backgroundColor:"#ffff"}}>
+      {state.routes.map((route, index,rname) => {
         const { options } = descriptors[route.key];
         const label =
           options.tabBarLabel !== undefined
@@ -17,7 +17,7 @@ export default function MyTabBar({ state, descriptors, navigation }) {
             : route.name;
 
         const isFocused = state.index === index;
-console.log(isFocused)
+console.log("rname ",rname)
 console.log("route  ",route)
         const onPress = () => {
           const event = navigation.emit({
@@ -47,7 +47,7 @@ console.log("route  ",route)
             onPress={onPress}
             onLongPress={onLongPress}
             style={{ flex: 0 , 
-width:100,
+// width:50,
             // shadowColor:"#747171",
             
             // shadowOffset:19,
@@ -57,7 +57,10 @@ width:100,
                 borderRadius:3,
                 // borderStyle:"solid",
                 // borderWidth:1,
-                margin:30
+                // margin:30
+                marginLeft:30,
+                marginRight:30,
+                marginBottom:30
             }}
           >
           {isFocused? <View style={{
@@ -98,9 +101,11 @@ width:100,
 //             width: 0,
 //             height: 4
 //           }
-        }}><Ionicons name={route.name} size={20} 
-          color="#4b778d" style={{marginRight:10,marginLeft:6}}/><Text style={{ color: "#4b778d"}}> Family</Text></View>
-:<Ionicons name={route.name} size={24} color="#4b778d" />}  
+        }}><Ionicons name={route.name} size={18} 
+          color="#4b778d" style={{marginRight:0,marginLeft:6}}/><Text style={{ color: "#4b778d",fontSize:12}}> {route.params.tabName}</Text></View>
+:
+
+<Ionicons style={{margin:1}} name={route.name} size={18} color="#4b778d" />}  
           </TouchableOpacity>
         );
       })}
