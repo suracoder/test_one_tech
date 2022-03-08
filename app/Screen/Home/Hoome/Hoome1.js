@@ -17,7 +17,7 @@ export default function HomeScreen({ navigation }) {
       borderRadius: 5,
       height: 100, flexDirection: "row", marginTop: 100, marginLeft: 30, marginRight: 30,
     }}>
-       <View style={{ alignItems: "flex-start", padding: 10,flexDirection:"row" }}><Text>Hello </Text><Text  >Robert Grant</Text></View>
+       <View style={{ alignItems: "flex-start", marginTop:30,flexDirection:"row" }}><Text>Hello </Text><Text style={{color:color.primary,fontWeight:"bold"}} >Robert Grant</Text></View>
 
       <View style={{ alignItems: "flex-end", padding: 20 }}><AvL /></View>
 

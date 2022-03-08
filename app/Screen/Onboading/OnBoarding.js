@@ -35,22 +35,24 @@ export default class extends Component {
     }
   }
   render() {
-console.log("navigation props  >>>> ",this.props)
+    console.log("navigation props  >>>> ", this.props)
 
     let data = [
       {
-        name: "knrefjknerfkjernfjkerbfjker",
+        name: `Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nim ad minim veniam, quis nostrud exercitation ullam laboris nisi ut aliquip ex ea`,
+
         key: 0
       },
 
 
       {
-        name: "lkjenrfkjerbfkjer",
+        name: `Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nim ad minim veniam, quis nostrud exercitation ullam laboris nisi ut aliquip ex ea`,
+
         key: 1
       },
 
       {
-        name: "klrtnglkrtngkjrtngnrtglknrtgknrtgkjrtgtnrglknrtglknrtgkntrjkg j gjrgnkrtjg",
+        name: `Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nim ad minim veniam, quis nostrud exercitation ullam laboris nisi ut aliquip ex ea`,
         key: 2
       },
     ]
@@ -105,16 +107,16 @@ console.log("navigation props  >>>> ",this.props)
             <View
               style={styles.buttonSection} >
               <View style={{ flex: 1, alignItems: "flex-start" }}>
-                <Button text="Skip" onPress={()=>{
-                                  this.props.navigation.navigate('Authentication');
+                <Button text="Skip" onPress={() => {
+                  this.props.navigation.navigate('Authentication');
 
                 }} type="fill" backgroundColor="#ffff" size='small' />
               </View>
               <View style={{ alignItems: 'flex-end' }}>
                 <Button onPress={this.onPressNext} text="Next" size="small" backgroundColor={color.primary} /></View>
             </View> :
-            <View style={{ flex:1,marginTop:30,alignContent:"center", alignItems:"center", alignSelf:"stretch"}}>
-              <Button text="Get Started" onPress={()=>{
+            <View style={{ flex: 1, marginTop: 30, alignContent: "center", alignItems: "center", alignSelf: "stretch" }}>
+              <Button text="Get Started" onPress={() => {
                 // this.props.navigate.na
                 this.props.navigation.navigate('Authentication');
               }} backgroundColor={color.primary} />
@@ -134,7 +136,7 @@ console.log("navigation props  >>>> ",this.props)
 const styles = {
   container: {
     flex: 1,
-    backgroundColor:"#ffff"
+    backgroundColor: "#ffff"
   },
 
   wrapper: {},
@@ -193,7 +195,7 @@ const styles = {
 
     flexDirection: "row", flex: 0, marginBottom: 40, marginLeft: 30, marginRight: 30
   },
-  skipBtn:{
+  skipBtn: {
 
   }
 }

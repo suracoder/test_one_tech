@@ -19,36 +19,41 @@ const Example = (props) => {
         <Box>
         <FormControl   mb="5">
             {/* <FormControl.Label>Project Title</FormControl.Label> */}
-            <Input    borderWidth="1" borderColor="#4b778d" placeholder="Title"    InputRightElement={<Icon as={<MaterialIcons name="person" />} size={5} ml="2" color="muted.400" />}/>
+            <Input    value="Robert " borderWidth="1" borderColor="#4b778d" placeholder="Title"    InputRightElement={<Icon as={<MaterialIcons name="person" />} size={5} ml="2" color="muted.400" />}/>
         
           </FormControl>
           <FormControl isInvalid mb="5">
-            {/* <FormControl.Label>Project Title</FormControl.Label> */}
-            <Input  placeholder="Title"   InputRightElement={<Icon as={<MaterialIcons name="email" />} size={5} ml="2" color="muted.400" />}/>
-        
+         
+            {/* <FormControl.Label>Projaect Title</FormControl.Label> */}
+            <Input  placeholder="Email Address "   InputRightElement={<Icon as={<MaterialIcons name="email" />} size={5} ml="2" color="muted.400" />}/>
+            <FormControl.ErrorMessage leftIcon={<WarningOutlineIcon size="xs" />}>
+              Invalid Email Address
+            </FormControl.ErrorMessage>
           </FormControl>
           <FormControl mb="5">
             {/* <FormControl.Label>Project Title</FormControl.Label> */}
-            <Input  placeholder="Title"    borderWidth="1" borderColor="#4b778d"  InputRightElement={<Icon as={<MaterialIcons name="phone" />} size={5} ml="2" color="muted.400" />}/>
-        
+            <Input  placeholder="email"   value="0954606595" borderWidth="1" borderColor="#4b778d"  InputRightElement={<Icon as={<MaterialIcons name="phone" />} size={5} ml="2" color="muted.400" />}/>
+           
           </FormControl>
           <FormControl isInvalid  mb="5">
             {/* <FormControl.Label>Project Title</FormControl.Label> */}
-            <Input  placeholder="Title" InputRightElement={<Icon as={<MaterialIcons name="password" />} size={5} ml="2" color="muted.400" />}/>
+            <Input  placeholder="Type A 8 Character password" InputRightElement={<Icon as={<MaterialIcons name="password" />} size={5} ml="2" color="muted.400" />}/>
         
           </FormControl>
           <FormControl isInvalid>
-            {/* <FormControl.Label>Project Title</FormControl.Label> */}
-            <Input placeholder="Title"  InputRightElement={<Icon as={<MaterialIcons name="password" />} size={5} ml="2" color="muted.400" />} />
+       
+          
+            <Input placeholder="Confirm Password"  InputRightElement={<Icon as={<MaterialIcons name="password" />} size={5} ml="2" color="muted.400" />} />
             <FormControl.ErrorMessage leftIcon={<WarningOutlineIcon size="xs" />}>
-              Something is wrong.
+          Password Doesn't match
             </FormControl.ErrorMessage>
           </FormControl>
 
 <View style={{marginTop:10}}>
 <Button   onPress={()=>{
               navigation.navigate('OTP')
-          }}    backgroundColor={color.secondary} text="Next"></Button>
+          }}   
+           backgroundColor={color.primary} text="Next"></Button>
 </View>
 
        
