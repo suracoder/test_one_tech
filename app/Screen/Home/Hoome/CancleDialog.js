@@ -12,11 +12,7 @@ const OverlayComponent  = (props) => {
 
   return (
     <View>
-      {/* <Button
-        title="Open Overlay"
-        onPress={toggleOverlay}
-        buttonStyle={styles.button}
-      /> */}
+       
       <Overlay isVisible={props.showModal}
       
       overlayStyle={{shadowColor:"red"}}

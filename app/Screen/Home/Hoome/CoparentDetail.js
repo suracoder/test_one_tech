@@ -28,7 +28,8 @@ import Button from "../../../components/Button/Button"
               <Text>surafelworku46@gmail.com</Text>
               <Text>245 56 naivr</Text>
               <Text>MI 493849</Text>
-              <View  style={{ flex:0,width:'100%',marginTop:5}}><Button text="Request Pending"  borderRadius='10' color={"#9faebf"}   backgroundColor="#ced6df"/></View>
+              <View  style={{ flex:0,alignContent:"center" ,alignItems:"center" ,alignSelf:"center",marginRight:15,marginTop:10}}>
+                  <Button text="Request Pending"  borderRadius='10' color={"#9faebf"}   backgroundColor="#ced6df"/></View>
 
               </View>
 

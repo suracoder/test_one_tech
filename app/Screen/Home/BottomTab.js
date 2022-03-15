@@ -105,7 +105,7 @@ console.log("route  ",route)
           color="#4b778d" style={{marginRight:0,marginLeft:6}}/><Text style={{ color: "#4b778d",fontSize:12}}> {route.params.tabName}</Text></View>
 :
 
-<Ionicons style={{margin:1}} name={route.name} size={18} color="#4b778d" />}  
+<Ionicons style={{margin:1}} name={route.name} size={18} color="#4b778d"  />}  
           </TouchableOpacity>
         );
       })}

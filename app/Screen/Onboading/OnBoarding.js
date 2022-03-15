@@ -59,10 +59,14 @@ export default class extends Component {
     return (
       <View style={styles.container}>
         <Swiper
+
           style={styles.wrapper}
-          height={400} horizontal={true}
+          height={500} horizontal={true}
           ref='swiper'
+          // dotStyle={{flex:0,marginTop:50}}
           activeDotStyle={{
+            // height:10,
+            // display:'flex',
             backgroundColor: "#4b778d",
             borderColor: "#4b778d"
           }}
@@ -139,30 +143,37 @@ const styles = {
     backgroundColor: "#ffff"
   },
 
-  wrapper: {},
+  wrapper: {
+
+
+    // flex:1
+  },
 
   slide: {
-    flex: 1,
+    // flex: 1,
+    // marginBottom:10,
     justifyContent: 'center',
     backgroundColor: 'transparent'
   },
 
   slide1: {
-    flex: 1,
+    // flex: 1,
+    // marginBottom:10,
+
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#ffff'
   },
 
   slide2: {
-    flex: 1,
+    // flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#ffff'
   },
 
   slide3: {
-    flex: 1,
+    // flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#ffff'

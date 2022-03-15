@@ -31,7 +31,7 @@ let handleCloseWindow=()=>{
                     <View style={{marginTop:35,marginLeft:40,marginRight:40}}><Text>Enter Co-parent registered email given ID code number to connect </Text></View>
         <View style={{
             justifyContent: "space-between",
-            backgroundColor: "#ffff", height: 200, flexDirection: "column",
+            backgroundColor: "#ffff", height: 230, flexDirection: "column",
             marginTop: 40, marginLeft: 30, marginRight: 30, borderStyle: "solid",
             borderWidth: 1, borderColor: "#c8d1db", shadow: 1, rounded: 10, borderRadius: 7
         }}>
@@ -74,7 +74,7 @@ let handleCloseWindow=()=>{
             </View>
             <View style={{ flex: 1,alignContent:"center" ,alignItems:"center" ,alignSelf:"center",marginTop:20 }}>
                 
-            <Button text="Request Pending"  backgroundColor="#4b778d" ></Button>
+            <Button text="Request Pending"  backgroundColor="#ced6df" ></Button>
             </View>
          
         </View>

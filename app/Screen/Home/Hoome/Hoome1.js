@@ -7,7 +7,7 @@ import { View, Text, TouchableOpacity } from 'react-native';
 // import Header from './Header';
 import AvL from "./Avater"
 import Button from "../../../components/Button/Button"
-import CopartnerDetail from "./CopartnerDetail"
+import CoparentDetail from "./CoparentDetail"
 import { color } from '../../../styles/color';
 export default function HomeScreen({ navigation }) {
 
@@ -52,15 +52,16 @@ export default function HomeScreen({ navigation }) {
         justifyContent: "space-between", backgroundColor: "#ffff",
         height: 40, flexDirection: "row", marginTop: 20, marginLeft: 30, marginRight: 30,
       }}>
-        <View style={{ flex: 0, alignItems: "flex-start" }}><Text>Co-Partener with</Text></View>
-        <View style={{ alignItems: "flex-end" }}><Button onPress={() => {
+        <View style={{ flex: 0, alignItems: "flex-start" }}><Text style={{paddingTop:7}}>Co-Parenting with</Text></View>
+        <View style={{ alignItems: "flex-end" ,marginTop:0}}>
+          <Button onPress={() => {
           navigation.navigate('Hoome2');
         }} text="Add" size="small" backgroundColor="#4b778d" /></View>
 
       </View>
 
  
-      <CopartnerDetail />
+      <CoparentDetail />
     </View>
   );
 }
