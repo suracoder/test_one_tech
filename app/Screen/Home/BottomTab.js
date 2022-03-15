@@ -47,7 +47,7 @@ console.log("route  ",route)
             onPress={onPress}
             onLongPress={onLongPress}
             style={{ flex: 0 , 
-// width:50,
+// width:15,
             // shadowColor:"#747171",
             
             // shadowOffset:19,
@@ -72,7 +72,9 @@ console.log("route  ",route)
             borderLeftWidth:2,
             borderRightWidth:1,
             borderStartWidth:0.5,
-            borderBottomWidth:3 ,borderColor:"#c8d1db" ,shadow:1 , rounded:100,borderRadius:9,
+            borderBottomWidth:3 ,borderColor:"#c8d1db" ,
+            shadow:1 ,
+             rounded:100,borderRadius:9,
             borderBottomEndRadius:40,
             borderTopEndRadius:40,
             borderTopStartRadius:40,
@@ -101,11 +103,13 @@ console.log("route  ",route)
 //             width: 0,
 //             height: 4
 //           }
-        }}><Ionicons name={route.name} size={18} 
-          color="#4b778d" style={{marginRight:0,marginLeft:6}}/><Text style={{ color: "#4b778d",fontSize:12}}> {route.params.tabName}</Text></View>
+        }}>
+          <Ionicons name={route.name} size={18} 
+          color="#4b778d" style={{marginRight:0,marginLeft:6}}/>
+          <Text style={{ color: "#4b778d",fontSize:12}}> {route.params.tabName}</Text></View>
 :
 
-<Ionicons style={{margin:1}} name={route.name} size={18} color="#4b778d"  />}  
+<Ionicons style={{margin:1}} name={route.name} size={15} color="#4b778d"  />}  
           </TouchableOpacity>
         );
       })}

@@ -71,6 +71,7 @@ export default class OTP extends Component {
 
 
                         }}
+                        maxLength={1}
 
                         value={pin1}
                         style={{
@@ -111,6 +112,7 @@ export default class OTP extends Component {
                         }}
 
                         value={pin2}
+                        maxLength={1}
 
                         style={{
 
@@ -138,6 +140,7 @@ export default class OTP extends Component {
 
                         ref={"pin3ref"}
 
+                        maxLength={1}
 
                         onChangeText={(pin3) => {
 
@@ -183,6 +186,9 @@ export default class OTP extends Component {
 
 
                             this.setState({ pin4: pin4 })
+                            if(pin4!==null||pin4!==''){
+                                this.props.navigation.navigate('Home');
+                            }
                         }}
 
                         value={pin4}
